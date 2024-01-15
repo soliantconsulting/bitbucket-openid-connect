@@ -1,6 +1,6 @@
 {
   "name": "@soliantconsulting/bitbucket-openid-connect",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "BitBucket OpenID Connect CDK template for Soliant Consulting projects",
   "type": "module",
   "author": "Soliant Consulting",
