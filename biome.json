@@ -1,0 +1,26 @@
+{
+    "$schema": "https://biomejs.dev/schemas/1.5.2/schema.json",
+    "organizeImports": {
+        "enabled": true
+    },
+    "files": {
+        "include": [
+            "biome.json",
+            "cdk.json",
+            "release.config.cjs",
+            "commitlint.config.cjs",
+            "index.ts"
+        ]
+    },
+    "linter": {
+        "enabled": true,
+        "rules": {
+            "recommended": true
+        }
+    },
+    "formatter": {
+        "indentStyle": "space",
+        "indentWidth": 4,
+        "lineWidth": 100
+    }
+}
