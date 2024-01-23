@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/soliantconsulting/bitbucket-openid-connect/compare/v1.1.0...v1.1.1) (2024-01-23)
+
+
+### Bug Fixes
+
+* include all dist files in distribution ([dfa8b8a](https://github.com/soliantconsulting/bitbucket-openid-connect/commit/dfa8b8a9513f2dcdaa8c75998f5f22331ae221be))
+
 # [1.1.0](https://github.com/soliantconsulting/bitbucket-openid-connect/compare/v1.0.0...v1.1.0) (2024-01-23)
 
 
