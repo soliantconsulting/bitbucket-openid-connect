@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/soliantconsulting/bitbucket-openid-connect/compare/v1.0.0...v1.1.0) (2024-01-23)
+
+
+### Features
+
+* create cli script to run cdk deployment and split stack ([2f24d31](https://github.com/soliantconsulting/bitbucket-openid-connect/commit/2f24d311795cd05d57d75853a072346860714bbf))
+
 # 1.0.0 (2024-01-15)
 
 
