@@ -9,13 +9,17 @@
             "cdk.json",
             "release.config.cjs",
             "commitlint.config.cjs",
-            "index.ts"
+            "src/**/*"
         ]
     },
     "linter": {
         "enabled": true,
         "rules": {
-            "recommended": true
+            "recommended": true,
+            "nursery": {
+                "useImportType": "error",
+                "noUnusedImports": "error"
+            }
         }
     },
     "formatter": {

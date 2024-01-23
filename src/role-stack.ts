@@ -1,21 +1,18 @@
 import * as cdk from "aws-cdk-lib";
 import * as iam from "aws-cdk-lib/aws-iam";
-import { Construct } from "constructs";
+import type { Construct } from "constructs";
+import type { ProviderStack } from "./provider-stack.js";
 
 type BitbucketStackProps = cdk.StackProps & {
     readonly repositoryUuid: string;
     readonly bitbucketAudience: string;
     readonly bitbucketDomain: string;
+    readonly providerStack: ProviderStack;
 };
 
-export class BitbucketStack extends cdk.Stack {
-    constructor(scope: Construct, id: string, props: BitbucketStackProps) {
+export class RoleStack extends cdk.Stack {
+    public constructor(scope: Construct, id: string, props: BitbucketStackProps) {
         super(scope, id, props);
-
-        const bitbucketProvider = new iam.OpenIdConnectProvider(this, "BitbucketProvider", {
-            url: `https://${props.bitbucketDomain}`,
-            clientIds: [props.bitbucketAudience],
-        });
 
         const conditions: iam.Conditions = {
             StringEquals: {
@@ -28,7 +25,7 @@ export class BitbucketStack extends cdk.Stack {
 
         const role = new iam.Role(this, "BitbucketDeployRole", {
             assumedBy: new iam.WebIdentityPrincipal(
-                bitbucketProvider.openIdConnectProviderArn,
+                props.providerStack.provider.openIdConnectProviderArn,
                 conditions,
             ),
             managedPolicies: [iam.ManagedPolicy.fromAwsManagedPolicyName("AdministratorAccess")],
@@ -42,26 +39,3 @@ export class BitbucketStack extends cdk.Stack {
         });
     }
 }
-
-const app = new cdk.App();
-const stackSuffix = app.node.tryGetContext("stackSuffix");
-const repositoryUuid = app.node.tryGetContext("repositoryUuid");
-
-if (typeof stackSuffix !== "string") {
-    console.error("Missing stackSuffix context variable");
-    process.exit(1);
-}
-
-if (typeof repositoryUuid !== "string") {
-    console.error("Missing repositoryUuid context variable");
-    process.exit(1);
-}
-
-new BitbucketStack(app, `BitbucketOpenIDConnect-${stackSuffix}`, {
-    repositoryUuid,
-    bitbucketDomain:
-        "api.bitbucket.org/2.0/workspaces/soliantconsulting/pipelines-config/identity/oidc",
-    bitbucketAudience: "ari:cloud:bitbucket::workspace/edf547a3-8e06-4217-abd8-7b9139a21e2c",
-});
-
-app.synth();

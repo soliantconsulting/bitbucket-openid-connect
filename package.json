@@ -5,6 +5,9 @@
   "type": "module",
   "author": "Soliant Consulting",
   "license": "MIT",
+  "bin": {
+    "bitbucket-openid-connect": "./dist/cli.js"
+  },
   "files": [
     "index.js",
     "cdk.json"
@@ -12,8 +15,7 @@
   "scripts": {
     "build": "tsc",
     "format": "biome format . --write",
-    "lint": "biome lint .",
-    "biome-ci": "biome ci ."
+    "check": "biome check . --apply"
   },
   "devDependencies": {
     "@biomejs/biome": "1.5.2",
@@ -25,7 +27,11 @@
     "typescript": "^5.3.3"
   },
   "dependencies": {
+    "@aws-cdk/cli-lib-alpha": "2.122.0-alpha.0",
+    "@aws-sdk/client-cloudformation": "^3.496.0",
+    "aws-cdk": "^2.122.0",
     "aws-cdk-lib": "^2.121.1",
+    "commander": "^11.1.0",
     "constructs": "^10.3.0"
   }
 }
