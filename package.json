@@ -9,8 +9,7 @@
     "bitbucket-openid-connect": "./dist/cli.js"
   },
   "files": [
-    "index.js",
-    "cdk.json"
+    "dist/**/*"
   ],
   "scripts": {
     "build": "tsc",
