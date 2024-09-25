@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/soliantconsulting/bitbucket-openid-connect/compare/v1.1.2...v1.1.3) (2024-09-25)
+
+
+### Bug Fixes
+
+* bump pacakge versions ([2d7eac3](https://github.com/soliantconsulting/bitbucket-openid-connect/commit/2d7eac3fb7c3b6c121cd4aa4102cc1cfff9bf270))
+
 ## [1.1.2](https://github.com/soliantconsulting/bitbucket-openid-connect/compare/v1.1.1...v1.1.2) (2024-09-25)
 
 
