@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/soliantconsulting/bitbucket-openid-connect/compare/v1.1.1...v1.1.2) (2024-09-25)
+
+
+### Bug Fixes
+
+* add shebang line in cli.js ([873d252](https://github.com/soliantconsulting/bitbucket-openid-connect/commit/873d2520210a6a0db1c9346f9ebf2eebafbd82fe))
+
 ## [1.1.1](https://github.com/soliantconsulting/bitbucket-openid-connect/compare/v1.1.0...v1.1.1) (2024-01-23)
 
 
