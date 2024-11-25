@@ -1,3 +1,10 @@
+## [1.1.4](https://github.com/soliantconsulting/bitbucket-openid-connect/compare/v1.1.3...v1.1.4) (2024-11-25)
+
+
+### Bug Fixes
+
+* pnpm audit ([e1d6aeb](https://github.com/soliantconsulting/bitbucket-openid-connect/commit/e1d6aeb726bdc8c35048d2eb9bd9fc28d22deb3c))
+
 ## [1.1.3](https://github.com/soliantconsulting/bitbucket-openid-connect/compare/v1.1.2...v1.1.3) (2024-09-25)
 
 
