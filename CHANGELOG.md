@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/soliantconsulting/bitbucket-openid-connect/compare/v1.1.4...v1.2.0) (2025-01-14)
+
+
+### Features
+
+* bump dependencies ([647f93b](https://github.com/soliantconsulting/bitbucket-openid-connect/commit/647f93b003c7b42d418f54eaa011ad03f0b35691))
+
 ## [1.1.4](https://github.com/soliantconsulting/bitbucket-openid-connect/compare/v1.1.3...v1.1.4) (2024-11-25)
 
 
