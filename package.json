@@ -14,24 +14,30 @@
   "scripts": {
     "build": "tsc",
     "format": "biome format . --write",
-    "check": "biome check . --apply"
+    "check": "biome check . --write"
   },
   "devDependencies": {
-    "@biomejs/biome": "1.5.2",
-    "@commitlint/cli": "^19.6.1",
-    "@commitlint/config-conventional": "^19.6.0",
-    "@tsconfig/node20": "^20.1.4",
-    "@types/node": "^20.17.12",
-    "lefthook": "^1.10.4",
-    "typescript": "^5.7.3"
+    "@biomejs/biome": "1.9.4",
+    "@commitlint/cli": "^19.8.0",
+    "@commitlint/config-conventional": "^19.8.0",
+    "@tsconfig/node22": "^22.0.1",
+    "@types/node": "^22.14.0",
+    "lefthook": "^1.11.6",
+    "typescript": "^5.8.2"
   },
   "dependencies": {
-    "@aws-cdk/cli-lib-alpha": "2.175.1-alpha.0",
-    "@aws-sdk/client-cloudformation": "^3.726.1",
-    "aws-cdk": "^2.175.1",
-    "aws-cdk-lib": "^2.175.1",
-    "commander": "^11.1.0",
+    "@aws-cdk/cli-lib-alpha": "2.1007.0-alpha.0",
+    "@aws-sdk/client-cloudformation": "^3.782.0",
+    "aws-cdk": "^2.1007.0",
+    "aws-cdk-lib": "^2.188.0",
+    "commander": "^13.1.0",
     "constructs": "^10.4.2"
   },
-  "packageManager": "pnpm@9.10.0+sha512.73a29afa36a0d092ece5271de5177ecbf8318d454ecd701343131b8ebc0c1a91c487da46ab77c8e596d6acf1461e3594ced4becedf8921b074fbd8653ed7051c"
+  "packageManager": "pnpm@10.6.5+sha512.cdf928fca20832cd59ec53826492b7dc25dc524d4370b6b4adbf65803d32efaa6c1c88147c0ae4e8d579a6c9eec715757b50d4fa35eea179d868eada4ed043af",
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@biomejs/biome",
+      "lefthook"
+    ]
+  }
 }

@@ -72,7 +72,7 @@ program
             throw new Error("Could not find RoleArn output");
         }
 
-        console.log(output.OutputValue);
+        process.stdout.write(output.OutputValue);
     });
 
 await program.parseAsync();
