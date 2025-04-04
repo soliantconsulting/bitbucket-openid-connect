@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/soliantconsulting/bitbucket-openid-connect/compare/v1.2.0...v1.3.0) (2025-04-04)
+
+
+### Features
+
+* update all dependencies ([2fe4c79](https://github.com/soliantconsulting/bitbucket-openid-connect/commit/2fe4c79eb6282889bceb350b4ddd8be7cae16e6a))
+
 # [1.2.0](https://github.com/soliantconsulting/bitbucket-openid-connect/compare/v1.1.4...v1.2.0) (2025-01-14)
 
 
