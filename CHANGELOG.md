@@ -1,3 +1,10 @@
+## [1.3.2](https://github.com/soliantconsulting/bitbucket-openid-connect/compare/v1.3.1...v1.3.2) (2025-05-08)
+
+
+### Reverts
+
+* Revert "fix: always deploy provider stack into us-east-1" ([27e3d9b](https://github.com/soliantconsulting/bitbucket-openid-connect/commit/27e3d9be73bddbf20ac2babc7ffbd0adae83a3cf))
+
 ## [1.3.1](https://github.com/soliantconsulting/bitbucket-openid-connect/compare/v1.3.0...v1.3.1) (2025-05-08)
 
 
