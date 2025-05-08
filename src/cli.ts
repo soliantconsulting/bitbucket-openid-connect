@@ -28,7 +28,12 @@ class Producer implements ICloudAssemblyDirectoryProducer {
                 "ari:cloud:bitbucket::workspace/edf547a3-8e06-4217-abd8-7b9139a21e2c",
         };
 
-        const providerStack = new ProviderStack(app, `${this.namespace}-provider`, baseProps);
+        const providerStack = new ProviderStack(app, `${this.namespace}-provider`, {
+            ...baseProps,
+            env: {
+                region: "us-east-1",
+            },
+        });
 
         new RoleStack(app, `${this.namespace}-role-${this.repositoryName}`, {
             ...baseProps,
