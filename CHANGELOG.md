@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/soliantconsulting/bitbucket-openid-connect/compare/v1.3.0...v1.3.1) (2025-05-08)
+
+
+### Bug Fixes
+
+* always deploy provider stack into us-east-1 ([176bc6a](https://github.com/soliantconsulting/bitbucket-openid-connect/commit/176bc6a260d467746686904719346c5dad29a528))
+
 # [1.3.0](https://github.com/soliantconsulting/bitbucket-openid-connect/compare/v1.2.0...v1.3.0) (2025-04-04)
 
 
