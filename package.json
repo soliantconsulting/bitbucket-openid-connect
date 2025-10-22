@@ -2,6 +2,10 @@
   "name": "@soliantconsulting/bitbucket-openid-connect",
   "version": "1.4.0",
   "description": "BitBucket OpenID Connect CDK template for Soliant Consulting projects",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/soliantconsulting/bitbucket-openid-connect.git"
+  },
   "type": "module",
   "author": "Soliant Consulting",
   "license": "MIT",
