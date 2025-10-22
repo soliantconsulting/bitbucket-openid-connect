@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/soliantconsulting/bitbucket-openid-connect/compare/v1.4.0...v1.4.1) (2025-10-22)
+
+
+### Bug Fixes
+
+* add provenance attestation ([db98b04](https://github.com/soliantconsulting/bitbucket-openid-connect/commit/db98b0463d05b2c1d33791402bcd1d0b93c06eba))
+
 # [1.4.0](https://github.com/soliantconsulting/bitbucket-openid-connect/compare/v1.3.2...v1.4.0) (2025-09-10)
 
 
